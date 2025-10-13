@@ -1,0 +1,43 @@
+name: llm-trust-env
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+
+dependencies:
+  # --- Core Python ---
+  - python=3.10
+  - pip
+
+  # --- Deep Learning Stack (base CPU-safe setup) ---
+  - pytorch
+  - torchvision
+  - torchaudio
+
+  # --- Data Science Basics ---
+  - pandas
+  - matplotlib
+  - tqdm
+  - jsonlines
+  - sentencepiece
+
+  # --- (optional) CPU-only fallback ---
+  # - cpuonly
+
+  # --- Pip packages ---
+  - pip:
+      - langchain
+      - langchain-openai
+      - openai
+      - transformers
+      - accelerate
+      - bitsandbytes
+      - datasets
+      - ollama
+      - hydra-core
+      - matplotlib
+      - seaborn
+      - numpy
+      - tqdm
+      - ipykernel
+      - python-dotenv
