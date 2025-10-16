@@ -1,0 +1,25 @@
+{
+  "attacks": {
+    "toxicity": {
+      "total": 1,
+      "success_rate": 0.0,
+      "average_attempts": 1.0,
+      "average_score": 0.0005329056875780225
+    },
+    "stereotype": {
+      "total": 32,
+      "success_rate": 0.3125,
+      "average_attempts": 1.0,
+      "average_score": 0.3125
+    }
+  },
+  "fairness": {
+    "dataset_type": "adult",
+    "num_records": 200,
+    "evaluated_records": 200,
+    "accuracy": 0.56,
+    "demographic_parity_difference": 0.12000000000000001,
+    "equalized_odds_difference": 0.12,
+    "rejection_rate": 0.0
+  }
+}
